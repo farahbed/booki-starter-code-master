@@ -142,6 +142,7 @@ form {
   #search-bar {
    border: 1px solid #f2f2f2;
    font-weight: bold;
+   border: none;
   }
   
   #search-button-desktop {
