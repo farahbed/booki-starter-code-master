@@ -153,6 +153,7 @@ form {
    border-radius: 0px 15px 15px 0px;
    font-size: medium;
    border-style: none;
+   cursor: pointer;
   }
   
   .search-button-mobile {
@@ -184,6 +185,7 @@ form {
    display: flex;
    gap: 8px;
    font-size: 12px;
+   cursor: pointer;
 }
 
 .filters-sort li {
@@ -283,6 +285,7 @@ form {
  .show-more-container {
    margin-top: 20px;
    font-weight: bold;
+   cursor: pointer;
 }
 
  /****** Popular ***********/
@@ -502,6 +505,7 @@ form {
     font-size: medium;
     border-style: none;
     visibility: visible;
+    cursor: pointer;;
   }
   .search-button-mobile i {
     color: white;
