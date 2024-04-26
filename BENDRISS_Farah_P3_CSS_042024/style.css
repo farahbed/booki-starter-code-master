@@ -13,8 +13,8 @@
    color: var(--main-color);
 }
 body {
-   margin-left: 10px;
-   margin-right: 10px;
+   margin: 0 auto;
+   max-width: 1440px;
 }
 
 a {
@@ -25,7 +25,6 @@ a {
 main {
    padding: 0 50px;
    margin-top: 30px;
-   max-width: 1440px;
 }
 
 /***settings***/
@@ -112,7 +111,6 @@ nav ul li a {
    text-decoration: none;
    color: initial;
    padding-top: 14px;
-   border-top: 2px solid transparent;
 }
 
 nav ul li a:hover {
@@ -157,7 +155,7 @@ form {
   }
   
   .search-button-mobile {
-   visibility: hidden;
+   display: none;
   }
   
   /* icon */
@@ -238,7 +236,7 @@ form {
    gap: 30px;
  }
  
- /****** Hebergements ***********/
+ /****** Hébergements ***********/
  
  #accommodation {
    width: calc(70% - 10px);
@@ -395,10 +393,7 @@ form {
 @media (min-width: 768px) and (max-width: 1023px) {
   /****MENU TABLET*****/
     
-  #search-button-mobile {
-     display: none;
-      }
-  .filters {
+   .filters {
      flex-wrap: wrap; 
   }
 
@@ -482,7 +477,7 @@ form {
     text-align: center;
     padding-top: 14px;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--filter-bg-color);
+    border-bottom: 2px solid var(--filter-bg-color)
   }
   nav ul li a:hover {
     color: var(--main-color);
@@ -492,6 +487,9 @@ form {
   } 
 
   /****MENU PHONES****/
+  .menu {
+    margin-left: 10px;
+    margin-right: 10px; }
 
   .search-bar {
   width: 100%;
@@ -502,10 +500,11 @@ form {
     background-color: var(--main-color);
     gap: 10px;
     border-radius: 15px;
-    font-size: medium;
     border-style: none;
-    visibility: visible;
-    cursor: pointer;;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
   .search-button-mobile i {
     color: white;
